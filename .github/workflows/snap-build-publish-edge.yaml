@@ -22,8 +22,6 @@ jobs:
         with:
           run_tests: true
           track: "latest"
-          # TODO add riscv64 once we have a core24 snap for it, see
-          # https://launchpad.net/~ubuntu-core-service/+snap/core24
-          architectures: arm64,amd64,armhf
+          architectures: arm64,amd64,armhf,riscv64
           spread_suites: "google-nested:"
           snapcraft_channel: "latest/edge"
